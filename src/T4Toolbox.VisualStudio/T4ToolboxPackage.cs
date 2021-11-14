@@ -43,7 +43,7 @@ namespace T4Toolbox.VisualStudio
 
     // Ensure VS experimental hive can find the extension dlls.
     [ProvideBindingPath]
-
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Performance", "VSSDK004:Use BackgroundLoad flag in ProvideAutoLoad attribute for asynchronous auto load.", Justification = "<Pending>")]
     public sealed class T4ToolboxPackage : Package, IDisposable
     {
         internal const string Id = "c88631b5-770c-453d-b90e-7136f127d57d";

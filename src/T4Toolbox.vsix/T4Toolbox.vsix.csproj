@@ -27,7 +27,9 @@
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' " />
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' " />
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <CopyVsixExtensionFiles>False</CopyVsixExtensionFiles>
+  </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\T4Toolbox.DirectiveProcessors\T4Toolbox.DirectiveProcessors.csproj">
       <Project>{e0282961-2d83-48cc-b4d4-8257449cf8f7}</Project>
